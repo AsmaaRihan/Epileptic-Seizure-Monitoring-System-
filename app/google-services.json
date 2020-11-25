@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "50932769552",
+    "firebase_url": "https://videochat-d95a4.firebaseio.com",
+    "project_id": "videochat-d95a4",
+    "storage_bucket": "videochat-d95a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50932769552:android:6126bbbb99910fb3e93b95",
+        "android_client_info": {
+          "package_name": "com.example.video_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50932769552-3s1o58fbn39nhqk1sa7fil59tkoctpcb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTVzS8w1aY_2Sld8p7db1VhNC4fDxfm3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50932769552-3s1o58fbn39nhqk1sa7fil59tkoctpcb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/back_home_btn_medicine"
+                    android:layout_width="56dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/ic_home_black_24dp"
+                    android:tint="@android:color/black"></ImageView>
+                <TextView
+                    android:text="Medicine Reminder"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="60dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/chose_medicien"
+        android:layout_width="394dp"
+        android:layout_height="153dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Chose your medicien:"
+            android:textColor="@color/text"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="342dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/corners"
+            android:fontFamily="sans-serif-condensed"
+            android:textAllCaps="true"
+            android:textColor="@color/text"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_rounded"
+            android:text="Medicine"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="224dp"
+            tools:layout_editor_absoluteY="179dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/enter_dose"
+        android:layout_width="wrap_content"
+        android:layout_height="138dp"
+        android:layout_below="@id/chose_medicien"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="-34dp"
+        android:layout_marginEnd="37dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Enter your Dose:"
+            android:textColor="@color/text"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/dose"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corners"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:textColor="@color/text"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/set_time"
+        android:layout_width="394dp"
+        android:layout_height="153dp"
+        android:layout_below="@id/enter_dose"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-34dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Set the Time:"
+            android:textColor="@color/text"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/no_days"
+            android:layout_width="190dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corners"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:hint="Number of Days"
+            android:inputType="number"
+            android:textAllCaps="true"
+            android:textColor="@color/text"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_rounded"
+            android:text="Time "
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="224dp"
+            tools:layout_editor_absoluteY="179dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="153dp"
+        android:layout_below="@id/set_time"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="-17dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add additional alarm"
+            android:textColor="@color/text"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="161dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="200dp"
+            android:src="@drawable/addition"></ImageView>
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+</RelativeLayout>

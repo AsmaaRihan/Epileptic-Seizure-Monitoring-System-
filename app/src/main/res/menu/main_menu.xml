@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:background="#8F3D0746" >
+
+    <item
+        android:id="@+id/main_settings_btn"
+        android:title="@string/main_settings_btn" />
+
+
+    <item
+        android:id="@+id/home_btn"
+        android:title="Home" />
+
+
+
+</menu>
